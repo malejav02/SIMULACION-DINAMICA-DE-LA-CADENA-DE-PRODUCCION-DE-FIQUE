@@ -1,0 +1,357 @@
+{UTF-8}
+Abonos  = A FUNCTION OF( Bagazo)
+	~	
+	~		|
+
+Bagazo  = A FUNCTION OF( Desfibrado)
+	~	
+	~		|
+
+Comercialización de fibra sintéticas  = A FUNCTION OF( Contaminación)
+	~	
+	~		|
+
+Comercialización de otras fibras naturales  = A FUNCTION OF( )
+	~	
+	~		|
+
+Consumidores fique  = A FUNCTION OF( Demanda fique,Precio de venta)
+	~	
+	~		|
+
+Contaminación  = A FUNCTION OF( Comercialización de fibra sintéticas)
+	~	
+	~		|
+
+Corte  = A FUNCTION OF( Fertilización,Tiempo crecimiento planta)
+	~	
+	~		|
+
+Costo de producción  = A FUNCTION OF( Producción total)
+	~	
+	~		|
+
+Costo del lote  = A FUNCTION OF( )
+	~	
+	~		|
+
+Cuidado del cultivo  = A FUNCTION OF( Fertilización)
+	~	
+	~		|
+
+Cultivo sembrado  = A FUNCTION OF( Cuidado del cultivo,Muertes a causa de plagas,Muertes debido a factores biológicos y no biológicos\
+		,Siembra,Tiempo de crecimiento cultivo)
+	~	
+	~		|
+
+Demanda fique  = A FUNCTION OF( Comercialización de fibra sintéticas,Consumidores fique\
+		)
+	~	
+	~		|
+
+Desespinado  = A FUNCTION OF( Despalmado)
+	~	
+	~		|
+
+Desfibrado  = A FUNCTION OF( Desespinado)
+	~	
+	~		|
+
+Despalmado  = A FUNCTION OF( Corte)
+	~	
+	~		|
+
+Elaboración de productos de fibra corta  = A FUNCTION OF( Bagazo)
+	~	
+	~		|
+
+Elaboración de productos procesados  = A FUNCTION OF( Sacudida)
+	~	
+	~		|
+
+Empacado  = A FUNCTION OF( Sacudida)
+	~	
+	~		|
+
+Exportación  = A FUNCTION OF( Demanda fique,Precio de venta)
+	~	
+	~		|
+
+Extracción  = A FUNCTION OF( Producción de jugo)
+	~	
+	~		|
+
+Fermentado  = A FUNCTION OF( Fibra)
+	~	
+	~		|
+
+Fertilización  = A FUNCTION OF( Cultivo sembrado)
+	~	
+	~		|
+
+Fibra  = A FUNCTION OF( Desfibrado)
+	~	
+	~		|
+
+Hoyado  = A FUNCTION OF( Trazado del cultivo)
+	~	
+	~		|
+
+Insumos  = A FUNCTION OF( )
+	~	
+	~		|
+
+Interés por producir fique  = A FUNCTION OF( Comercialización de otras fibras naturales\
+		,Demanda fique)
+	~	
+	~		|
+
+Limpieza  = A FUNCTION OF( Preparación para el terreno)
+	~	
+	~		|
+
+Muertes a causa de plagas  = A FUNCTION OF( Cultivo sembrado,Tasa de muertes)
+	~	
+	~		|
+
+Muertes debido a factores biológicos y no biológicos  = A FUNCTION OF( Cultivo sembrado\
+		,Tasa de muertes)
+	~	
+	~		|
+
+Oferta  = A FUNCTION OF( Producción total)
+	~	
+	~		|
+
+Precio de venta  = A FUNCTION OF( Oferta)
+	~	
+	~		|
+
+Preparación para el terreno  = A FUNCTION OF( Insumos,Interés por producir fique,Tierra disponible\
+		)
+	~	
+	~		|
+
+Producción de jugo  = A FUNCTION OF( Desfibrado)
+	~	
+	~		|
+
+Producción total  = A FUNCTION OF( Abonos,Costo de producción,Elaboración de productos de fibra corta\
+		,Elaboración de productos procesados,Empacado,Productos derivados de las saponinas\
+		)
+	~	
+	~		|
+
+Productos derivados de las saponinas  = A FUNCTION OF( Saponinas)
+	~	
+	~		|
+
+Sacudida  = A FUNCTION OF( Secado)
+	~	
+	~		|
+
+Saponinas  = A FUNCTION OF( Extracción)
+	~	
+	~		|
+
+Secado  = A FUNCTION OF( Fermentado)
+	~	
+	~		|
+
+Selección de lote  = A FUNCTION OF( Costo del lote)
+	~	
+	~		|
+
+Siembra  = A FUNCTION OF( Fertilización,Insumos,Transplante)
+	~	
+	~		|
+
+Tasa de muertes  = A FUNCTION OF( )
+	~	
+	~		|
+
+Tiempo crecimiento planta  = A FUNCTION OF( )
+	~	
+	~		|
+
+Tiempo de crecimiento cultivo  = A FUNCTION OF( )
+	~	
+	~		|
+
+Tierra disponible  = A FUNCTION OF( Muertes a causa de plagas,Selección de lote)
+	~	
+	~		|
+
+Transplante  = A FUNCTION OF( Hoyado)
+	~	
+	~		|
+
+Trazado del cultivo  = A FUNCTION OF( Limpieza)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,65,0
+10,1,Selección de lote,1472,129,56,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,15,Preparación para el terreno,1349,255,64,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,16,Limpieza,1308,319,29,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,17,Trazado del cultivo,1292,400,60,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,18,Hoyado,1205,375,27,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,19,Transplante,1144,327,37,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,21,15,16,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1368,324)|
+1,22,16,17,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1336,381)|
+1,23,17,18,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1232,428)|
+10,25,Siembra,1100,247,27,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,26,19,25,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1091,295)|
+10,27,Fertilización,1036,216,40,11,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,31,Cuidado del cultivo,937,148,40,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,32,27,31,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(940,184)|
+10,33,Corte,877,252,20,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,34,Despalmado,840,315,40,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,35,Desespinado,976,327,41,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,36,Desfibrado,883,383,36,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,37,27,33,1,0,0,0,0,64,0,-1--1--1,,1|(961,260)|
+1,38,33,34,1,0,0,0,0,64,0,-1--1--1,,1|(844,260)|
+1,39,34,35,1,0,0,0,0,64,0,-1--1--1,,1|(932,281)|
+1,40,35,36,1,0,0,0,0,64,0,-1--1--1,,1|(964,372)|
+10,41,Fibra,720,344,20,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,42,Bagazo,692,456,25,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,43,Producción de jugo,1024,400,47,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,44,36,42,1,0,0,0,0,64,0,-1--1--1,,1|(776,384)|
+1,46,36,41,1,0,0,0,0,64,0,-1--1--1,,1|(799,332)|
+1,47,36,43,1,0,0,0,0,64,0,-1--1--1,,1|(937,440)|
+10,48,Fermentado,600,352,39,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,49,Secado,512,397,25,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,50,Sacudida,516,471,32,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,51,Elaboración de productos procesados,533,569,71,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,53,41,48,1,0,0,0,0,64,0,-1--1--1,,1|(664,324)|
+1,54,48,49,1,0,0,0,0,64,0,-1--1--1,,1|(541,357)|
+1,55,49,50,1,0,0,0,0,64,0,-1--1--1,,1|(497,432)|
+1,57,50,51,1,0,0,0,2,65,0,-1--1--1,|0||-1--1--1,1|(544,511)|
+10,59,Abonos,792,533,28,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,60,Elaboración de productos de fibra corta,637,504,77,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,61,42,60,1,0,0,0,0,64,0,-1--1--1,,1|(656,468)|
+1,62,42,59,1,0,0,0,0,64,0,-1--1--1,,1|(780,465)|
+10,63,Extracción,1089,480,36,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,64,Saponinas,991,521,33,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,65,Productos derivados de las saponinas,865,593,68,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,66,43,63,1,0,0,0,0,64,0,-1--1--1,,1|(1016,449)|
+1,67,63,64,1,0,0,0,0,64,0,-1--1--1,,1|(1077,519)|
+1,68,64,65,1,0,0,0,0,64,0,-1--1--1,,1|(915,508)|
+10,69,Insumos,1233,232,27,11,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+1,70,69,15,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1287,212)|
+1,71,69,25,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1164,213)|
+10,72,Producción total,555,687,52,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,73,51,72,1,0,0,0,0,64,0,-1--1--1,,1|(528,640)|
+1,74,60,72,1,0,0,0,0,64,0,-1--1--1,,1|(669,565)|
+1,75,65,72,1,0,0,0,0,64,0,-1--1--1,,1|(743,695)|
+10,77,Exportación,853,945,39,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,78,Consumidores fique,841,705,48,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,83,Costo del lote,1436,64,45,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,84,83,1,1,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1476,97)|
+10,85,Tierra disponible,1357,132,53,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,86,1,85,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1413,107)|
+1,87,85,15,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1369,181)|
+10,88,Cultivo sembrado,1084,115,56,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,89,25,88,1,0,43,0,2,64,0,-1--1--1,|0||-1--1--1,1|(1115,172)|
+1,90,88,27,1,0,0,0,0,64,0,-1--1--1,,1|(1023,167)|
+10,91,Tasa de muertes,1208,48,52,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,97,Muertes a causa de plagas,1115,-9,53,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,98,91,97,1,0,0,0,0,64,0,-1--1--1,,1|(1180,-4)|
+1,99,97,88,1,0,0,0,0,64,0,-1--1--1,,1|(1140,77)|
+1,100,88,97,1,0,0,0,0,64,0,-1--1--1,,1|(1056,13)|
+10,101,Tiempo de crecimiento cultivo,968,5,59,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,102,101,88,1,0,0,0,2,65,0,-1--1--1,|0||-1--1--1,1|(989,52)|
+10,103,Tiempo crecimiento planta,832,168,60,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,104,103,33,1,0,0,0,2,65,0,-1--1--1,|0||-1--1--1,1|(820,220)|
+1,105,18,19,1,0,0,0,0,64,0,-1--1--1,,1|(1144,372)|
+10,106,Muertes debido a factores biológicos y no biológicos,1243,175,68,24,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+1,107,88,106,1,0,0,0,0,64,0,-1--1--1,,1|(1212,131)|
+1,108,106,88,1,0,0,0,0,64,0,-1--1--1,,1|(1136,169)|
+1,109,91,106,1,0,0,0,0,64,0,-1--1--1,,1|(1261,92)|
+10,110,Empacado,424,584,35,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,111,50,110,1,0,0,0,0,64,0,-1--1--1,,1|(415,563)|
+1,112,110,72,1,0,0,0,0,64,0,-1--1--1,,1|(448,639)|
+1,113,27,25,1,0,0,0,0,64,0,-1--1--1,,1|(1043,239)|
+1,114,97,85,1,0,0,0,0,64,0,-1--1--1,,1|(1268,13)|
+1,115,31,88,1,0,0,0,0,64,0,-1--1--1,,1|(980,113)|
+1,116,59,72,1,0,0,0,0,64,0,-1--1--1,,1|(687,659)|
+10,117,Demanda fique,993,717,48,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,118,Oferta,593,779,24,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,119,72,118,1,0,0,0,0,64,0,-1--1--1,,1|(603,737)|
+1,120,117,77,1,0,0,0,0,64,0,-1--1--1,,1|(999,861)|
+1,121,117,78,1,0,0,0,0,64,0,-1--1--1,,1|(924,689)|
+10,122,Comercialización de otras fibras naturales,1227,643,68,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,123,Comercialización de fibra sintéticas,861,787,65,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,124,123,117,1,0,0,0,0,64,0,-1--1--1,,1|(967,772)|
+10,126,Interés por producir fique,1267,525,45,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,127,Contaminación,869,888,47,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,128,127,123,1,0,0,0,0,64,0,-1--1--1,,1|(836,849)|
+1,131,122,126,1,0,0,0,0,64,0,-1--1--1,,1|(1305,583)|
+1,132,123,127,1,0,0,0,0,64,0,-1--1--1,,1|(896,824)|
+10,134,Costo de producción,495,764,36,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,135,134,72,1,0,0,0,0,64,0,-1--1--1,,1|(481,709)|
+10,136,Precio de venta,716,789,49,11,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,137,118,136,1,0,0,0,0,64,0,-1--1--1,,1|(633,733)|
+1,138,117,126,1,0,0,0,0,64,0,-1--1--1,,1|(1124,599)|
+1,139,136,78,1,0,0,0,0,64,0,-1--1--1,,1|(756,720)|
+1,141,72,134,1,0,0,0,0,64,0,-1--1--1,,1|(564,731)|
+1,142,136,77,1,0,0,0,0,64,0,-1--1--1,,1|(708,863)|
+1,143,126,15,1,0,0,0,0,64,0,-1--1--1,,1|(1383,276)|
+1,145,78,117,1,0,0,0,0,64,0,-1--1--1,,1|(903,740)|
+///---\\\
+:L<%^E!@
+5:Preparación para el terreno
+9:Current
+19:65,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+77:0
+78:0
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
